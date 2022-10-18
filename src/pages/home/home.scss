@@ -1,0 +1,12 @@
+.container{
+   width: 100%;
+   position: relative;
+   
+   .agents_card_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+}

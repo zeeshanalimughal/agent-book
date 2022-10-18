@@ -1,0 +1,40 @@
+.navbar{
+    width: 95%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 25px 0;
+ 
+    // .logo{
+    //     flex:1;
+    //     padding-right: 40px;
+    // }
+    .right_nav{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .icon_box{
+            background-color: transparent;
+            border: 1px solid #FFFFFFCC;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .profile{
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            cursor: pointer;
+            .toggle{
+                font-size: 1.4rem;
+                color: #fff;
+            }
+        }
+    }
+}
