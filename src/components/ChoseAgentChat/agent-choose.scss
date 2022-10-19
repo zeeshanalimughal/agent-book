@@ -243,6 +243,27 @@
                 border-radius: 50%;
                 border: 2px dashed #6B9E9A;
             }
+            .image {
+                &:nth-child(2) {
+                    transform: scale(.7) translate(80px, -40px);
+                }
+    
+                &:nth-child(3) {
+                    transform: scale(.6) translate(-20px, 180px);
+                }
+    
+                &:nth-child(4) {
+                    transform: translate(50px, 250px);
+                }
+    
+                &:nth-child(5) {
+                    transform: translate(290px, 45px);
+                }
+    
+                &:nth-child(6) {
+                    transform: scale(.7) translate(360px, 375px);
+                }
+            }    
         }
 
         &.reverse .circule_images_box {
