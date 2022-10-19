@@ -13,6 +13,8 @@ body {
   overflow-x: hidden;
   scroll-padding-top: 9rem;
   scroll-behavior: smooth;
+  box-sizing: border-box !important;
+
 }
 
 /* 

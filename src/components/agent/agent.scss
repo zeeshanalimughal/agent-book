@@ -1,7 +1,9 @@
 .agents_container {
-    width: 70%;
+    width: 100%;
     background-color: #fff;
     margin: 4rem auto;
+    padding: 4rem 10%;
+    box-sizing: border-box;
 
     .title {
 
@@ -106,6 +108,95 @@
                 color: #FFFFFF;
                 text-decoration: none;
                 line-height: 60px;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .agents_container {
+        width: 100%;
+        background-color: #fff;
+        margin: 1rem auto;
+        padding: 2rem 3%;
+
+        .title {
+            font-size: 25px;
+        }
+
+        .sub_title {
+            font-size: 16px;
+        }
+
+        .agent_card {
+            flex: 1 1 28rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-top: 2rem;
+
+            .profile_image {
+                min-width: 72px;
+                height: 72px;
+            }
+
+            .agent_details {
+                .name_row {
+                    flex-wrap: wrap;
+                    row-gap: 5px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .agents_card_container {
+        gap: 2rem;
+
+        .agent_card {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 0rem;
+            margin: 0 !important;
+
+            .agent_details {
+                text-align: center;
+
+                .name_row {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+
+                    .name {
+                        font-size: 20px;
+                        display: block;
+                    }
+
+                    span {
+                        margin-left: 15px;
+                    }
+                }
+
+                .bio {
+
+                    font-size: 14px;
+                    line-height: 24px;
+                    padding-bottom: 10px;
+                    text-align: center;
+                }
+
+                .contact_btn {
+                    padding: 10px 18px;
+                    font-size: 15px;
+                }
+
             }
         }
     }

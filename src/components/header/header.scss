@@ -38,3 +38,29 @@
         }
     }
 }
+
+
+
+
+@media (max-width: 768px) {
+    .navbar{
+        .logo{
+            img{
+                width: 130px;
+            }
+        }
+        .right_nav{
+            gap: 10px;
+            .icon_box{
+                padding: 6px;
+            }
+            .profile{
+                padding: 6px;
+                gap: 1.2rem;
+                .toggle{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

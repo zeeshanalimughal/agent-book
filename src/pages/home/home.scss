@@ -1,12 +1,257 @@
-.container{
-   width: 100%;
-   position: relative;
-   
-   .agents_card_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    flex-wrap: wrap;
+.container {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+
+    .agents_card_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        flex-wrap: wrap;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4rem auto;
+        box-sizing: border-box !important;
+        width: 80%;
+
+        .pagination_list {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+
+            .pagination_item {
+                width: 34.15px;
+                height: 35.84px;
+                border-radius: 4px;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                &.arrow {
+                    border: none;
+                }
+
+                &.active {
+                    background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #5072F8;
+                }
+
+                a {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: rgba(0, 0, 0, 0.5);
+                    text-decoration: none;
+
+                }
+
+                &.active a {
+                    color: #4B6DF3;
+                }
+
+            }
+        }
+    }
+
+
+
+    .contact_section {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 auto 0rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 182px;
+        padding: 40px 10%;
+        box-sizing: border-box;
+        gap: 5rem;
+        background-color: #12182D;
+        flex-wrap: wrap;
+
+        .title {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 150%;
+            color: #FFFFFF;
+        }
+
+        .desc {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #FFFFFF;
+        }
+
+        .content {
+            flex: 1 1 40rem;
+        }
+
+        .mail_us {
+            flex: 1 1 40rem;
+
+            .input_box {
+                background: #FFFFFF;
+                border: 1px solid #FFFFFF;
+                border-radius: 4px;
+                max-width: 528px;
+                width: 100%;
+                display: flex;
+                height: 56px;
+
+                input {
+                    flex: 1;
+                    border: none;
+                    outline: none;
+                    font-family: 'Open Sans' sans-serif;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 150%;
+                    color: #73757E;
+                    padding: 0 30px;
+
+                    &::placeholder {
+                        font-size: 16px;
+                    }
+                }
+
+                button {
+                    background: #4B6DF3;
+                    border: 1px solid #FFFFFF;
+                    border-radius: 0px 4px 4px 0px;
+                    width: 80px;
+                    height: 56px;
+                    color: #fff;
+                    font-size: 22px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+
+
+    .articles_section {
+        width: 100%;
+        margin: 0 auto 0rem;
+        position: relative;
+        min-height: 60vh;
+        padding: 6rem 10% 3rem;
+        box-sizing: border-box;
+        background-color: #fff;
+
+        .title {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 35px;
+            line-height: 125%;
+            color: #232A43;
+        }
+
+        .articles {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 7rem;
+            margin-top: 4rem;
+        }
+    }
 }
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+
+        .pagination {
+            width: 100%;
+            padding-right: 3rem;
+            display: flex;
+            justify-content: center !important;
+
+            .pagination_list {
+                margin-right: auto;
+            }
+        }
+    }
+
+    .articles_section {
+        width: 100%;
+        padding: 2rem 3% 2rem !important;
+
+        .title {
+            font-size: 25px !important;
+        }
+
+        .articles {
+            gap: 4rem !important;
+            margin-top: 2rem !important;
+        }
+    }
+
+    .agents_card_container {
+        gap: 2rem !important;
+    }
+
+
+    .contact_section {
+        padding: 40px 3% !important;
+        gap: 3rem !important;
+
+        .title {
+            font-size: 25px !important;
+            line-height: 135% !important;
+        }
+
+        .desc {
+            font-size: 15px !important;
+            line-height: 130% !important;
+        }
+
+        .mail_us {
+            width: 100%;
+
+            .input_box {
+                max-width: 100% !important;
+                width: 100% !important;
+                height: 56px !important;
+
+                input {
+                    flex: 1;
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                }
+
+                button {
+
+                    width: 60px !important;
+                    height: 56px !important;
+                    font-size: 18px !important;
+                }
+            }
+        }
+    }
+
 }
