@@ -94,6 +94,7 @@ const Agents2 = [
 
 const articles = [
   {
+    id:1,
     title: "How to get multiple offers on your home",
     date_created: 'MARCH 21, 2022',
     author: "Joan Hollie",
@@ -102,6 +103,7 @@ const articles = [
     category: "SELLING"
   },
   {
+    id:2,
     title: "10 home buying tips for first-time home buyers",
     date_created: 'MARCH 21, 2022',
     author: "tim hortons",
@@ -110,6 +112,7 @@ const articles = [
     category: "BUYING"
   },
   {
+    id:3,
     title: "15 simple and relaxing  decor ideas to transform your home ",
     date_created: 'MARCH 21, 2022',
     author: "Joan Hollie",
