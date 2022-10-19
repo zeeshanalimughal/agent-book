@@ -18,7 +18,7 @@ import Article1 from '../../assets/images/articles/article-1.png'
 import Article2 from '../../assets/images/articles/article-2.png'
 import Article3 from '../../assets/images/articles/article-3.png'
 
-import { FaChevronLeft, FaChevronRight, FaSearch } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import AgentChoose from "../../components/ChoseAgentChat/AgentChoose";
 import { FiSearch } from "react-icons/fi";
 import Post from "../../components/post/Post";
