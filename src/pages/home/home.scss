@@ -109,11 +109,11 @@
         }
 
         .content {
-            flex: 1 1 35rem;
+            flex: 1 1 20rem;
         }
 
         .mail_us {
-            flex: 1 1 35rem;
+            flex: 1 1 15rem;
 
             .input_box {
                 background: #FFFFFF;
@@ -195,6 +195,17 @@
     }
 }
 
+@media (max-width: 991px) {
+    .container {
+        .contact_section {
+
+            padding: 40px 3%;
+            gap: 1rem;
+
+        }
+    }
+}
+
 
 
 
@@ -241,7 +252,7 @@
 
     .contact_section {
         padding: 40px 3% !important;
-        gap: 3rem !important;
+        gap: 1rem !important;
 
         .title {
             font-size: 25px !important;
@@ -254,7 +265,7 @@
         }
 
         .mail_us {
-            width: 100%;
+            width: 50%;
 
             .input_box {
                 max-width: 100% !important;

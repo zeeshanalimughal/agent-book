@@ -30,6 +30,7 @@
         background-color: #fff;
         margin-top: -165px;
         z-index: 1;
+
         .icon_box {
             position: absolute;
             top: 50%;
@@ -228,7 +229,8 @@
 @media (max-width: 1180px) {
     .agent_choose_and_chat {
         flex-wrap: wrap;
-        .circule_images_box{
+
+        .circule_images_box {
             margin-top: 0;
         }
     }
@@ -238,10 +240,12 @@
     .agent_choose_and_chat {
         padding: 3rem 3%;
         gap: 2rem;
+
         &.reverse {
             padding: 2rem 3%;
             flex-direction: row-reverse;
         }
+
         .circule_images_box {
             max-width: 420px;
             min-width: 420px;
@@ -250,13 +254,14 @@
             margin-bottom: 0rem;
             transform: scale(.75);
             background-color: transparent;
+
             &::before {
                 content: '';
                 position: absolute;
-                min-width: 350px;
-                max-width: 350px;
+                min-width: 350px !important;
+                max-width: 350px !important;
                 width: 100%;
-                min-height: 350px;
+                min-height: 350px !important;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
@@ -268,10 +273,10 @@
                 content: '';
                 position: absolute;
                 inset: 0;
-                min-width: 250px;
-                max-width: 250px;
+                min-width: 250px !important;
+                max-width: 250px !important;
                 width: 100%;
-                min-height: 250px;
+                min-height: 250px !important;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
