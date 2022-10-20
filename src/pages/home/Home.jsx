@@ -143,9 +143,9 @@ function Home() {
             <li className="pagination_item active"><a href="#">1</a></li>
             <li className="pagination_item"><a href="#">2</a></li>
             <li className="pagination_item"><a href="#">3</a></li>
-            <li className="pagination_item"><a href="#">4</a></li>
-            <li className="pagination_item"><a href="#">5</a></li>
+            <li className="pagination_item pagination_dots"><a href="#">. . .</a></li>
             <li className="pagination_item"><a href="#">6</a></li>
+            <li className="pagination_item"><a href="#">7</a></li>
             <li className="pagination_item arrow"><a href="#"><FaChevronRight /></a></li>
           </ul>
         </div>
@@ -168,9 +168,9 @@ function Home() {
             <li className="pagination_item active"><a href="#">1</a></li>
             <li className="pagination_item"><a href="#">2</a></li>
             <li className="pagination_item"><a href="#">3</a></li>
-            <li className="pagination_item"><a href="#">4</a></li>
-            <li className="pagination_item"><a href="#">5</a></li>
+            <li className="pagination_item pagination_dots"><a href="#">. . .</a></li>
             <li className="pagination_item"><a href="#">6</a></li>
+            <li className="pagination_item"><a href="#">7</a></li>
             <li className="pagination_item arrow"><a href="#"><FaChevronRight /></a></li>
           </ul>
         </div>
@@ -213,9 +213,9 @@ function Home() {
             <li className="pagination_item active"><a href="#">1</a></li>
             <li className="pagination_item"><a href="#">2</a></li>
             <li className="pagination_item"><a href="#">3</a></li>
-            <li className="pagination_item"><a href="#">4</a></li>
-            <li className="pagination_item"><a href="#">5</a></li>
+            <li className="pagination_item pagination_dots"><a href="#">. . .</a></li>
             <li className="pagination_item"><a href="#">6</a></li>
+            <li className="pagination_item"><a href="#">7</a></li>
             <li className="pagination_item arrow"><a href="#"><FaChevronRight /></a></li>
           </ul>
         </div>

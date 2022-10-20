@@ -99,21 +99,27 @@
 
 @media (max-width: 768px) {
     .article {
+        flex: 1 1 100% !important;
+        width: 100%;
+
         .date_row {
             span {
                 gap: 5px;
                 font-size: 12px;
             }
         }
+
         .post_title {
             font-size: 19px;
 
         }
+
         .article_bottom_row {
             .author {
                 font-size: 12px;
                 gap: 3px;
             }
+
             .category {
                 font-size: 12px;
                 gap: 3px;

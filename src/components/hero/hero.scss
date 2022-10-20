@@ -108,18 +108,20 @@
             font-size: 17px;
             line-height: 25px;
         }
+
         .search_box {
             max-width: 100%;
             width: 100%;
             margin-top: 2rem;
             height: 60px;
+
             input {
                 flex: 1;
                 width: 100%;
                 font-size: 1rem !important;
                 padding: 0 20px !important;
             }
-            
+
             .search_icon {
                 width: 25px !important;
                 height: 100% !important;
@@ -136,6 +138,14 @@
                 line-height: 15px !important;
             }
         }
+
+    }
+}
+
+
+@media screen and (max-width: 300px) {
+    .hero_container {
+        padding: 100px 3% !important;
 
     }
 }

@@ -36,6 +36,16 @@
                 align-items: center;
                 cursor: pointer;
 
+                &.pagination_dots {
+                    border: none;
+                    cursor: not-allowed;
+
+                    a {
+
+                        cursor: not-allowed;
+                    }
+                }
+
                 &.arrow {
                     border: none;
                 }
@@ -178,6 +188,13 @@
 
 
 
+@media (max-width: 1280px) {
+    .articles {
+        gap: 4rem !important;
+        margin-top: 2rem !important;
+    }
+}
+
 
 
 
@@ -188,10 +205,17 @@
             width: 100%;
             padding-right: 3rem;
             display: flex;
-            justify-content: center !important;
+            margin: 0;
+            margin-bottom: 2rem;
 
+            // justify-content: center !important;
             .pagination_list {
-                margin-right: auto;
+                display: flex;
+                align-items: center !important;
+                flex-wrap: nowrap;
+                // margin-right: auto;
+                transform: scale(.9);
+                gap: 5px;
             }
         }
     }
