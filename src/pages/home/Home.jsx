@@ -1,126 +1,17 @@
 import React from "react";
+import './home.scss';
+
 import Agent from "../../components/agent/Agent";
 import Header from "../../components/header/Header";
 import Hero from "../../components/hero/Hero";
-import './home.scss';
-import Agent_1 from '../../assets/images/agent-1.png'
-import DaveImage from '../../assets/images/profiles/dave.png'
-import JoanImage from '../../assets/images/profiles/joan.png'
-import LydiaImage from '../../assets/images/profiles/lydia.png'
-
-import Tim2 from '../../assets/images/profiles/tim2.png'
-import DaveImage2 from '../../assets/images/profiles/dave2.png'
-import JoanImage2 from '../../assets/images/profiles/joan2.png'
-import LydiaImage2 from '../../assets/images/profiles/ladia2.png'
-
-
-import Article1 from '../../assets/images/articles/article-1.png'
-import Article2 from '../../assets/images/articles/article-2.png'
-import Article3 from '../../assets/images/articles/article-3.png'
-
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import AgentChoose from "../../components/ChoseAgentChat/AgentChoose";
 import { FiSearch } from "react-icons/fi";
 import Post from "../../components/post/Post";
 import Footer from "../../components/footer/Footer";
-const Agents1 = [
-  {
-    id: 1,
-    name: "Tim Hortons",
-    bio: "Tim is a real estate agent at Kaleidico Realty, with over 8 years of experience. Lynn prides himself in satisfying his clients with the ...",
-    profile: Agent_1,
-    rating: 5,
-    phone: "8937498334"
-  },
-  {
-    id: 2,
-    name: "Joan Wrigley",
-    bio: "Tim is a real estate agent at Kaleidico Realty, with over 8 years of experience. Lynn prides himself in satisfying his clients with the ...",
-    profile: JoanImage,
-    rating: 5,
-    phone: "8937498334"
-  },
-  {
-    id: 3,
-    name: "Lydia Hollie",
-    bio: "Tim is a real estate agent at Kaleidico Realty, with over 8 years of experience. Lynn prides himself in satisfying his clients with the ...",
-    profile: LydiaImage,
-    rating: 5,
-    phone: "8937498334"
-  },
-  {
-    id: 4,
-    name: "Dave Lordsky",
-    bio: "Tim is a real estate agent at Kaleidico Realty, with over 8 years of experience. Lynn prides himself in satisfying his clients with the ...",
-    profile: DaveImage,
-    rating: 5,
-    phone: "8937498334"
-  },
-]
-const Agents2 = [
-  {
-    id: 1,
-    name: "Tim Hortons",
-    bio: "Tim is a real estate agent at Kaleidico Realty, with over 8 years of experience. Lynn prides himself in satisfying his clients with the ...",
-    profile: Tim2,
-    rating: 5,
-    phone: "8937498334"
-  },
-  {
-    id: 2,
-    name: "Joan Wrigley",
-    bio: "Tim is a real estate agent at Kaleidico Realty, with over 8 years of experience. Lynn prides himself in satisfying his clients with the ...",
-    profile: DaveImage2,
-    rating: 5,
-    phone: "8937498334"
-  },
-  {
-    id: 3,
-    name: "Lydia Hollie",
-    bio: "Tim is a real estate agent at Kaleidico Realty, with over 8 years of experience. Lynn prides himself in satisfying his clients with the ...",
-    profile: LydiaImage2,
-    rating: 5,
-    phone: "8937498334"
-  },
-  {
-    id: 4,
-    name: "Dave Lordsky",
-    bio: "Tim is a real estate agent at Kaleidico Realty, with over 8 years of experience. Lynn prides himself in satisfying his clients with the ...",
-    profile: JoanImage2,
-    rating: 5,
-    phone: "8937498334"
-  },
-]
 
-const articles = [
-  {
-    id:1,
-    title: "How to get multiple offers on your home",
-    date_created: 'MARCH 21, 2022',
-    author: "Joan Hollie",
-    post_image: Article1,
-    author_image: DaveImage2,
-    category: "SELLING"
-  },
-  {
-    id:2,
-    title: "10 home buying tips for first-time home buyers",
-    date_created: 'MARCH 21, 2022',
-    author: "tim hortons",
-    post_image: Article2,
-    author_image: JoanImage2,
-    category: "BUYING"
-  },
-  {
-    id:3,
-    title: "15 simple and relaxing  decor ideas to transform your home ",
-    date_created: 'MARCH 21, 2022',
-    author: "Joan Hollie",
-    post_image: Article3,
-    author_image: DaveImage2,
-    category: "BUYING"
-  },
-]
+
+import { Agents1, Agents2, chooseAgent1, chooseAgent2, articles } from '../../data'
 function Home() {
   return (
     <>
@@ -150,7 +41,7 @@ function Home() {
           </ul>
         </div>
 
-        <AgentChoose />
+        <AgentChoose data={chooseAgent1} />
 
         <section className="agents_container">
           <h3 className="title">Toronto’s Top Rated Agents </h3>
@@ -192,7 +83,7 @@ function Home() {
           </form>
         </section>
 
-        <AgentChoose direction="reverse" />
+        <AgentChoose direction="reverse" data={chooseAgent2} />
 
 
         <section className="articles_section">

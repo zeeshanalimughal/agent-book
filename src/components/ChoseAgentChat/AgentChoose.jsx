@@ -7,7 +7,7 @@ import CirculeImage6 from '../../assets/images/profiles/profile-6.jpg'
 import CirculeImage7 from '../../assets/images/profiles/profile-7.jpg'
 import Icon from '../../assets/images/Icon.png'
 import { FaSearch } from 'react-icons/fa'
-function AgentChoose({ direction }) {
+function AgentChoose({ direction, data }) {
     return (
         <section className={direction ? 'agent_choose_and_chat reverse' : 'agent_choose_and_chat'}>
             <div className="circule_images_box">
@@ -34,17 +34,17 @@ function AgentChoose({ direction }) {
             </div>
 
             <div className="content">
-                <label htmlFor="" className="sub_title">CHOOSING YOUR AGENT</label>
+                <label htmlFor="" className="sub_title">{data.subtitle}</label>
                 <h2 className="title">
-                    How to choose your agent
+                    {data.title}
                 </h2>
                 <p className="desc">
-                    You should choose an agent you are comfortable working with and who you feel has your best interests at heart. In order to make a decision, try asking prospective agents the following:
+                    {data.text}
                 </p>
                 <ul className="list">
-                    <li>How and where your property will be advertised</li>
-                    <li>Ask to see examples of their success in selling properties like yours</li>
-                    <li>How often you can expect feedback from the agent while your property is on the marke</li>
+                    {data.lists.map((list, id) => (
+                        <li key={id}>{list}</li>
+                    ))}
                 </ul>
                 <a href='#' className='search_agent_btn'><FaSearch /> Find an agent</a>
             </div>
